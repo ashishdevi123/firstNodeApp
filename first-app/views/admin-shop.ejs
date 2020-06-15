@@ -20,12 +20,18 @@
                             <h2 class="product__price">$<%= product.price %></h2>
                             <p class="product__description"><%= product.description %> A very interesting book about so many even more interesting things!</p>
                         </div>
-                        <form action="/product/<%= product._id %>" method="GET" class="card-content-form">
-                            <button type="submit" class="btn prod-details">Detail</button>
-                            <div class="card__actions add-tocardbtn">
-                                <button class="btn">Add to Cart</button>
-                            </div>
+
+                        <a href="/admin/edit-product/<%= product._id %>?edit=true" class="btn editbtn">Edit</a>
+
+                        <form action="/admin/shop" method="POST" class="card-content-form edit-form">
+                            <input type="hidden" name="id" value="<%= product._id %>">
+                            <button type="submit" class="btn prod-details">Delete</button>
                         </form>
+
+                        <!-- <form action="/admin/add-product" method="GET" class="card-content-form">
+                            <input type="hidden" name="id" value="<%= product._id %>">
+                            <button type="submit" class="btn prod-details">Edit</button>
+                        </form> -->
 
                     </article>
                 <% } %>

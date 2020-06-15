@@ -80,8 +80,20 @@ main {
 
 .card__image img {
   width: 100%;
+  height: 300px;
 }
 
+.prod-details{
+  display: inline-block;
+}
+
+.card-content-form{
+  text-align: center;
+}
+
+.add-tocardbtn{
+  display: inline-block;
+}
 .card__actions {
     padding: 1rem;
     text-align: center;
@@ -92,6 +104,11 @@ main {
     margin: 0 0.25rem;
 }
 
+.edit-form{
+  text-align: center;
+  display: inline-block;
+}
+
 .btn {
   font: inherit;
   border: 1px solid #00695c;
@@ -99,6 +116,8 @@ main {
   background: white;
   border-radius: 3px;
   cursor: pointer;
+  padding: 5px;
+  margin: 5px;
 }
 
 .btn:hover,

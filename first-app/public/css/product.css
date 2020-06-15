@@ -7,6 +7,8 @@
 .product-item {
     width: 20rem;
     max-width: 95%;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .product__title {
